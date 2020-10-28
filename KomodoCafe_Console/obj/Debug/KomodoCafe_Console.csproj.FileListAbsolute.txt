@@ -1,0 +1,6 @@
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\KomodoCafe_Console\bin\Debug\KomodoCafe_Console.exe.config
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\KomodoCafe_Console\bin\Debug\KomodoCafe_Console.exe
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\KomodoCafe_Console\bin\Debug\KomodoCafe_Console.pdb
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\KomodoCafe_Console\obj\Debug\KomodoCafe_Console.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\KomodoCafe_Console\obj\Debug\KomodoCafe_Console.exe
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\KomodoCafe_Console\obj\Debug\KomodoCafe_Console.pdb
