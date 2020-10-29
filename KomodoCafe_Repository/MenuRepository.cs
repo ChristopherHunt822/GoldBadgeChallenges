@@ -52,7 +52,7 @@ namespace KomodoCafe_Repository
             bool removeResult = _menu.Remove(existingItem);
             return removeResult;
             /*
-            Menu item = GetItemByName(name);
+            Menu item = GetItemByName(existingItem);
             if (item == null)
             {
                 return false;
@@ -70,7 +70,7 @@ namespace KomodoCafe_Repository
         {
             foreach (Menu item in _menu)
             {
-                if(item.Name == name)
+                if(item.Name.ToLower() == name.ToLower())
                 {
                     return item;
                 }
