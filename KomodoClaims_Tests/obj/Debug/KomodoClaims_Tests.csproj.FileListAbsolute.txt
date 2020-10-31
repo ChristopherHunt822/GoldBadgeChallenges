@@ -1,0 +1,16 @@
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\KomodoClaims_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\KomodoClaims_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\KomodoClaims_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\KomodoClaims_Tests\bin\Debug\KomodoClaims_Tests.dll
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\KomodoClaims_Tests\bin\Debug\KomodoClaims_Tests.pdb
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\KomodoClaims_Tests\bin\Debug\KomodoClaims_Repository.dll
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\KomodoClaims_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\KomodoClaims_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\KomodoClaims_Tests\bin\Debug\KomodoClaims_Repository.pdb
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\KomodoClaims_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\KomodoClaims_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\KomodoClaims_Tests\obj\Debug\KomodoClaims_Tests.csprojAssemblyReference.cache
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\KomodoClaims_Tests\obj\Debug\KomodoClaims_Tests.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\KomodoClaims_Tests\obj\Debug\KomodoClaims_Tests.csproj.CopyComplete
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\KomodoClaims_Tests\obj\Debug\KomodoClaims_Tests.dll
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\KomodoClaims_Tests\obj\Debug\KomodoClaims_Tests.pdb
