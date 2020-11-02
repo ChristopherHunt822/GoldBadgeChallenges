@@ -1,0 +1,16 @@
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\Outings_RepoTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\Outings_RepoTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\Outings_RepoTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\Outings_RepoTests\bin\Debug\Outings_RepoTests.dll
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\Outings_RepoTests\bin\Debug\Outings_RepoTests.pdb
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\Outings_RepoTests\bin\Debug\KomodoOutings_Repository.dll
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\Outings_RepoTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\Outings_RepoTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\Outings_RepoTests\bin\Debug\KomodoOutings_Repository.pdb
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\Outings_RepoTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\Outings_RepoTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\Outings_RepoTests\obj\Debug\KomodoOutings_Tests.csprojAssemblyReference.cache
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\Outings_RepoTests\obj\Debug\KomodoOutings_Tests.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\Outings_RepoTests\obj\Debug\KomodoOutings_Tests.csproj.CopyComplete
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\Outings_RepoTests\obj\Debug\Outings_RepoTests.dll
+C:\ElevenFiftyProjects\SD69\GoldBadgeChallenges\GoldBadgeChallenges\Outings_RepoTests\obj\Debug\Outings_RepoTests.pdb

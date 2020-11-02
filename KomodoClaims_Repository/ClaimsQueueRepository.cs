@@ -31,24 +31,13 @@ namespace KomodoClaims_Repository
         
         public void RemoveClaimFromQueue()
         {
-
-            // int startingCount = my_queue.Count;
-            //Console.WriteLine(my_queue.Dequeue());
             my_queue.Dequeue();
-            // bool wasRemoved = (my_queue.Count > startingCount) ? true : false;
-            // return wasRemoved;
-
         }
         
         public Claim ViewNextClaim()
         {
-            // int startingCount = my_queue.Count;
-            // Console.WriteLine(my_queue.Peek());
             Claim next = my_queue.Peek();
-            return next;
-            // bool justLooked = (my_queue.Count == startingCount) ? true : false;
-            // return justLooked;
-           
+            return next;          
         }
        
         

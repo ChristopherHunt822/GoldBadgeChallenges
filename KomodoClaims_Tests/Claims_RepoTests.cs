@@ -31,18 +31,36 @@ namespace KomodoClaims_Tests
 
             Assert.IsTrue(queueHasContent);
         }
-        /*
         [TestMethod]
-        public void ViewNextClaim_ShouldReturnClaim()
+        public void RemoveClaimFromQueue_ShouldRemoveClaimAndReturnFalse()
         {
             Claim claim = new Claim();
             ClaimsQueueRepository repo = new ClaimsQueueRepository();
             repo.CreateClaim(claim);
+            repo.RemoveClaimFromQueue();
 
-            Queue<Claim> contents = repo.ViewNextClaim();
+            Queue<Claim> contents = repo.ShowListOfClaims();
+            bool queueHasContents = contents.Contains(claim);
+
+            Assert.IsFalse(queueHasContents);
+
+        }
+        [TestMethod]
+        public void ViewNextClaim_ShouldLeaveClaimInQueue()
+        {
+            Claim claim = new Claim();
+            ClaimsQueueRepository repo = new ClaimsQueueRepository();
+            repo.CreateClaim(claim);
+            repo.ViewNextClaim();
+
+            Queue<Claim> contents = repo.ShowListOfClaims();
+            bool queueHasContent = contents.Contains(claim);
+
+            Assert.IsTrue(queueHasContent);
+
 
 
         }
-        */
+        
     }
 }

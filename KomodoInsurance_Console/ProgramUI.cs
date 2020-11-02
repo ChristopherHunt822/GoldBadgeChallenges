@@ -10,7 +10,7 @@ using Claim = KomodoClaims_Repository.Claim;
 
 namespace KomodoClaims_Console
 {
-    class ProgramUI
+    public class ProgramUI
     {
         private ClaimsQueueRepository _repo = new ClaimsQueueRepository();
         // private Queue<Claim> _myrepo = new Queue<Claim>();
@@ -196,6 +196,7 @@ namespace KomodoClaims_Console
             return days;
         }
 
-        
+
+        }
     }
-}
+
