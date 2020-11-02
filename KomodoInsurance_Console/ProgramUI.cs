@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,7 +26,7 @@ namespace KomodoClaims_Console
             
             Claim claim1 = new Claim(1, ClaimType.Car, "Car accident on 465",
                 400.00m, new DateTime(2018, 4, 25), new DateTime(2018, 4, 27), true);
-            Claim claim2 = new Claim(2, ClaimType.Home, "House fire in kitchen.",
+            Claim claim2 = new Claim(2, ClaimType.Home, "House fire in kitchen",
                 4000.00m, new DateTime(2018, 4, 11), new DateTime(2018, 4, 18), true);
             Claim claim3 = new Claim(3, ClaimType.Theft, "Stolen pancakes.",
                 4.00m, new DateTime(2018, 4, 27), new DateTime(2018, 6, 1), false);
@@ -78,8 +79,8 @@ namespace KomodoClaims_Console
             Queue<Claim> queueList = _repo.ShowListOfClaims();
             foreach (Claim claim in queueList)
             {
-                // AllClaims(claim);
-                DisplayContent(claim);
+                AllClaims(claim);
+                //DisplayContent(claim);
                 Console.WriteLine();
                 
             }
@@ -91,10 +92,9 @@ namespace KomodoClaims_Console
             Console.Clear();
             Queue<Claim> queueList = _repo.ShowListOfClaims();
             
-                
-            
             Claim peekClaim = _repo.ViewNextClaim();
-            DisplayContent(peekClaim);
+                Console.Clear();
+                DisplayContent(peekClaim);
             // Console.WriteLine(peekClaim);
             Console.WriteLine("Do you want to deal with this claim now(y/n)?");
             string response = Console.ReadLine().ToLower();
@@ -102,10 +102,13 @@ namespace KomodoClaims_Console
             if (response == "y")
             {
                 _repo.RemoveClaimFromQueue();
+                Console.WriteLine("Claim Successfully removed from Queue");
+                Console.Read();
             }
-            else 
+            else
             {
                 Console.WriteLine("Press any key to return to main menu.");
+                Console.Read();
             }
 
         }
@@ -165,7 +168,10 @@ namespace KomodoClaims_Console
     }
         private void AllClaims(Claim claims)
         {
-            Console.WriteLine("ClaimId     Type    Description    Amount    DateOfAccident    DateOfClaim    IsValid");
+            Console.Clear();
+            Console.WriteLine("{0, -5}{1, 8}{2, 23}{3, 10}{4, 25}{5, 25}{6, 15}", 
+                "ClaimID", "Type", "Description", "Amount", "DateOfAccident", "DateOfClaim", "IsValid");
+            // Console.WriteLine("ClaimId     Type    Description         Amount      DateOfAccident              DateOfClaim        IsValid");
             Queue<Claim> queueList = _repo.ShowListOfClaims();
             foreach (Claim claim in queueList)
             {
@@ -185,12 +191,14 @@ namespace KomodoClaims_Console
         }
         private void DisplayContent2(Claim claim)
         {
-            Console.WriteLine($"{claim.ClaimID}    {claim.ClaimType}    {claim.Description}    {claim.ClaimAmount}" +
-                $"    {claim.DateOfIncident}    {claim.DateOfClaim}    {claim.IsValid}");
+            Console.WriteLine("{0, 0}{1, 12}{2, 25}{3, 10}{4, 25}{5, 25}{6, 15}", claim.ClaimID, claim.ClaimType, claim.Description, claim.ClaimAmount, claim.DateOfIncident, claim.DateOfClaim, claim.IsValid);
+            //Console.WriteLine($"   {claim.ClaimID}        {claim.ClaimType}    {claim.Description}    {claim.ClaimAmount}" +
+              //  $"    {claim.DateOfIncident}    {claim.DateOfClaim}    {claim.IsValid}");
         }
 
         private double CalculateIsValid(DateTime datetime2, DateTime datetime)
         {
+            
             TimeSpan daySpan = datetime2 - datetime;
             double days = daySpan.TotalDays;
             return days;
