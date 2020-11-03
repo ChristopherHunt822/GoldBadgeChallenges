@@ -14,7 +14,6 @@ namespace KomodoClaims_Console
     public class ProgramUI
     {
         private ClaimsQueueRepository _repo = new ClaimsQueueRepository();
-        // private Queue<Claim> _myrepo = new Queue<Claim>();
         
         public void Run()
         {
@@ -28,7 +27,7 @@ namespace KomodoClaims_Console
                 400.00m, new DateTime(2018, 4, 25), new DateTime(2018, 4, 27), true);
             Claim claim2 = new Claim(2, ClaimType.Home, "House fire in kitchen",
                 4000.00m, new DateTime(2018, 4, 11), new DateTime(2018, 4, 18), true);
-            Claim claim3 = new Claim(3, ClaimType.Theft, "Stolen pancakes.",
+            Claim claim3 = new Claim(3, ClaimType.Theft, "Stolen pancakes",
                 4.00m, new DateTime(2018, 4, 27), new DateTime(2018, 6, 1), false);
             _repo.CreateClaim(claim1);
             _repo.CreateClaim(claim2);
@@ -90,7 +89,7 @@ namespace KomodoClaims_Console
         private void TakeNextClaim()
         {
             Console.Clear();
-            Queue<Claim> queueList = _repo.ShowListOfClaims();
+            // Queue<Claim> queueList = _repo.ShowListOfClaims();
             
             Claim peekClaim = _repo.ViewNextClaim();
                 Console.Clear();
@@ -169,7 +168,7 @@ namespace KomodoClaims_Console
         private void AllClaims(Claim claims)
         {
             Console.Clear();
-            Console.WriteLine("{0, -5}{1, 8}{2, 23}{3, 10}{4, 25}{5, 25}{6, 15}", 
+            Console.WriteLine("{0, -5}{1, 8}{2, 25}{3, 10}{4, 25}{5, 25}{6, 15}", 
                 "ClaimID", "Type", "Description", "Amount", "DateOfAccident", "DateOfClaim", "IsValid");
             // Console.WriteLine("ClaimId     Type    Description         Amount      DateOfAccident              DateOfClaim        IsValid");
             Queue<Claim> queueList = _repo.ShowListOfClaims();
@@ -185,13 +184,13 @@ namespace KomodoClaims_Console
             Console.WriteLine($"Type: {claim.ClaimType}");
             Console.WriteLine($"Description: {claim.Description}");
             Console.WriteLine($"Amount: {claim.ClaimAmount}");
-            Console.WriteLine($"DateOfIncident: {claim.DateOfIncident}");
-            Console.WriteLine($"DateOfClaim: {claim.DateOfClaim}");
+            Console.WriteLine($"DateOfIncident: {claim.DateOfIncident.Date.ToString("d")}");
+            Console.WriteLine($"DateOfClaim: {claim.DateOfClaim.Date.ToString("d")}");
             Console.WriteLine($"IsValid {claim.IsValid}");
         }
         private void DisplayContent2(Claim claim)
         {
-            Console.WriteLine("{0, 0}{1, 12}{2, 25}{3, 10}{4, 25}{5, 25}{6, 15}", claim.ClaimID, claim.ClaimType, claim.Description, claim.ClaimAmount, claim.DateOfIncident, claim.DateOfClaim, claim.IsValid);
+            Console.WriteLine("{0, 0}{1, 14}{2, 25}{3, 10}{4, 25}{5, 25}{6, 15}", claim.ClaimID, claim.ClaimType, claim.Description, claim.ClaimAmount, claim.DateOfIncident.Date.ToString("d"), claim.DateOfClaim.Date.ToString("d"), claim.IsValid);
             //Console.WriteLine($"   {claim.ClaimID}        {claim.ClaimType}    {claim.Description}    {claim.ClaimAmount}" +
               //  $"    {claim.DateOfIncident}    {claim.DateOfClaim}    {claim.IsValid}");
         }

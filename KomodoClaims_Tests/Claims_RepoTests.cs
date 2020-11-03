@@ -13,22 +13,17 @@ namespace KomodoClaims_Tests
         {
             Claim claim = new Claim();
             ClaimsQueueRepository repo = new ClaimsQueueRepository();
-
             bool addResult = repo.CreateClaim(claim);
-
             Assert.IsTrue(addResult);
         }
-
         [TestMethod]
         public void ShowListOfClaims_ShouldReturnCollection()
         {
             Claim claim = new Claim();
             ClaimsQueueRepository repo = new ClaimsQueueRepository();
             repo.CreateClaim(claim);
-
             Queue<Claim> contents = repo.ShowListOfClaims();
             bool queueHasContent = contents.Contains(claim);
-
             Assert.IsTrue(queueHasContent);
         }
         [TestMethod]
@@ -38,12 +33,9 @@ namespace KomodoClaims_Tests
             ClaimsQueueRepository repo = new ClaimsQueueRepository();
             repo.CreateClaim(claim);
             repo.RemoveClaimFromQueue();
-
             Queue<Claim> contents = repo.ShowListOfClaims();
             bool queueHasContents = contents.Contains(claim);
-
             Assert.IsFalse(queueHasContents);
-
         }
         [TestMethod]
         public void ViewNextClaim_ShouldLeaveClaimInQueue()
@@ -52,14 +44,9 @@ namespace KomodoClaims_Tests
             ClaimsQueueRepository repo = new ClaimsQueueRepository();
             repo.CreateClaim(claim);
             repo.ViewNextClaim();
-
             Queue<Claim> contents = repo.ShowListOfClaims();
             bool queueHasContent = contents.Contains(claim);
-
             Assert.IsTrue(queueHasContent);
-
-
-
         }
         
     }

@@ -39,7 +39,6 @@ namespace KomodoOutings_Console
             while (continueToRun)
             {
                 Console.Clear();
-
                 Console.WriteLine("Enter the number of the option you'd liek to select:\n" +
                     "1. Display all outings.\n" +
                     "2. Add new Outing.\n" +
@@ -208,7 +207,7 @@ namespace KomodoOutings_Console
         }
         private void DisplayOutings(Outings outing)
         {
-            Console.WriteLine($"Date: {outing.Date}");
+            Console.WriteLine($"Date: {outing.Date.ToString("d")}");
             Console.WriteLine($"Event Type: {outing.Type}");
             Console.WriteLine($"Event Cost: ${outing.EventCost}");
             Console.WriteLine($"Attendance: {outing.Attendance}");
